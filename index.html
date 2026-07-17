@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger — Habit & Hours Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="notebook">
+  <header>
+    <div class="title-row">
+      <input id="monthInput" class="month-input" type="text" value="July" spellcheck="false">
+    </div>
+    <div class="subtitle">tap a day cell to cycle · blank → ✓ done → ✗ missed</div>
+    <div class="legend">
+      <span><span class="swatch blank"></span> not marked</span>
+      <span><span class="swatch ok">✓</span> done</span>
+      <span><span class="swatch no">✗</span> missed</span>
+    </div>
+  </header>
+
+  <div class="controls-row">
+    <label>days in month</label>
+    <select id="daysSelect"></select>
+    <label style="margin-left:10px;">reset month</label>
+    <button class="add-habit-btn" id="resetBtn" style="border-color:var(--fail); color:var(--fail);">clear all marks</button>
+    <button class="add-habit-btn" id="resetTasksBtn" style="border-color:var(--fail); color:var(--fail);">clear all tasks</button>
+  </div>
+
+  <div class="add-task-row">
+    <input type="text" id="newTaskInput" placeholder="type a task and press add…" spellcheck="false">
+    <button class="add-habit-btn" id="addHabitBtn">+ add task</button>
+  </div>
+
+  <div class="table-scroll">
+    <table id="habitTable"></table>
+  </div>
+
+  <div class="chart-block">
+    <p class="chart-title">Study Hours</p>
+    <p class="chart-hint">tap/click inside a column to plot that day's hours (0–10)</p>
+    <div class="chart-wrap"><svg id="studyChart" class="chart"></svg></div>
+  </div>
+
+  <div class="chart-block">
+    <p class="chart-title">Sleep Hours</p>
+    <p class="chart-hint">tap/click inside a column to plot that day's hours (4–12)</p>
+    <div class="chart-wrap"><svg id="sleepChart" class="chart"></svg></div>
+  </div>
+
+  <footer class="note">saved automatically in this browser · one ledger per month name</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
