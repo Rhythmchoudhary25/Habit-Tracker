@@ -1,11 +1,9 @@
-# Ledger — Habit & Hours Tracker
+# Habit & Hours Tracker
 
 A single-page, notebook-styled habit tracker with editable daily habits and two
 click-to-plot graphs for study hours and sleep hours. Built as a lightweight,
 zero-backend personal productivity tool — pure HTML/CSS/JS, no frameworks,
 no build step.
-
-**[Live demo →](#)** *(update this link once GitHub Pages is enabled — see below)*
 
 ## Features
 
@@ -40,18 +38,14 @@ cd <repo-name>
 # just open index.html in a browser
 ```
 
-## Deploying with GitHub Pages
-
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under "Build and deployment," set **Source** to `Deploy from a branch`,
-   branch `main`, folder `/ (root)`.
-4. Save — GitHub will publish it at
-   `https://<your-username>.github.io/<repo-name>/`.
-5. Update the live demo link above once it's live.
-
 ## Notes
 
 Since this uses `localStorage`, data is private to each browser/device — it
 does not sync across devices and isn't visible to anyone else who opens the
 same link, which keeps it simple to use as a personal daily tracker.
+
+## Snapshots
+<img width="1150" height="560" alt="Screenshot 2026-07-17 144245" src="https://github.com/user-attachments/assets/d49195d9-3d62-46dd-bfc9-b05c43241b6a" />
+<img width="981" height="715" alt="Screenshot 2026-07-17 144305" src="https://github.com/user-attachments/assets/ee29f2c6-e75c-44d4-be44-64a17b9ae923" />
+
+
