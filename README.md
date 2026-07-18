@@ -33,8 +33,8 @@ no build step.
 No install or build step required.
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Rhythmchoudhary25/Habit-Tracker.git
+cd Habit-Tracker
 # just open index.html in a browser
 ```
 
